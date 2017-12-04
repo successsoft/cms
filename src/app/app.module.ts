@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ClientregisterComponent } from './clientregister/clientregister.component';
 import { RegisterComponent } from './register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'clientregister', component: ClientregisterComponent },
+  { path: 'dashboard', component: DashboardComponent },
   {
     path: '',
     redirectTo: '/login',
@@ -27,7 +29,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     ClientregisterComponent,
-    RegisterComponent
+    RegisterComponent,
+    DashboardComponent
   ],
   imports: [
     RouterModule.forRoot(
